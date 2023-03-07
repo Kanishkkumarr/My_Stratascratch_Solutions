@@ -1,0 +1,9 @@
+SELECT abs(
+(
+SELECT MAX(e.salary) AS Max_sal_M FROM db_employee AS e LEFT JOIN db_dept AS d ON d.id=e.department_id WHERE d.department ="marketing"
+)
+-
+(
+SELECT MAX(e.salary) AS Max_sal_M FROM db_employee AS e LEFT JOIN db_dept AS d ON d.id=e.department_id WHERE d.department ="engineering"
+)
+)
