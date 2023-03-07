@@ -1,0 +1,3 @@
+select acquired_quarter,COUNT(acquired_quarter) AS number_of_acquisitions from crunchbase_acquisitions 
+GROUP BY acquired_quarter 
+ORDER BY acquired_quarter,number_of_acquisitions;
