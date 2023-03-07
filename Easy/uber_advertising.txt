@@ -1,2 +1,6 @@
-select year,SUM(money_spent),SUM(customers_acquired) from uber_advertising
+SELECT 
+year,
+SUM(money_spent),
+SUM(customers_acquired) 
+FROM uber_advertising
 GROUP BY year;
